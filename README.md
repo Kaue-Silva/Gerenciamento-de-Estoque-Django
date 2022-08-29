@@ -1,6 +1,8 @@
 # Projeto Gerenciamento de Estoque com Django
 
 ## Sobre o Projeto
+! ! ! Projeto Em Andamento
+
 Projeto tem como objetivo auxiliar no controle de estoque, com alguns recursos essenciais.
 ## Informações Sobre o Projeto
 Antes de por a mão no codigo foi feito alguns preparativos, como a criação de um projeto no Trello, para melhor organização das tarefas.
