@@ -20,16 +20,33 @@ Projeto conta com o Docker que auxilia na parte de execução com o sistema de c
 
 
 ### Inicilizando Projeto com Docker
+
 ```bash
 # clonar o repositorio
 git clone https://github.com/Kaue-Silva/Gerenciamento-de-Estoque-Django.git
 
 # entrar na pasta
 cd Gerenciamento-de-Estoque-Django
-
-# iniciar com docker-compose
-docker-compose up --build
 ```
+Após clonar o repositorio precisamos configurar as variaveis de ambiente:
+- Na raiz do projeto vamos criar um arquivo ".env"
+- Dentro dele será necessário configurar as seguintes variaveis
+```
+# DB Config
+POSTGRES_DB= # Aqui vai o nome do banco
+POSTGRES_USER= # Aqui vai o usuario do banco
+POSTGRES_PASSWORD= # Aqui vai a senha do banco
+POSTGRES_HOST= db # Aqui deixa como estar
+
+# Django Config
+SECRET_KEY= # Aqui coloquem uma chave segura
+```
+- Tudo configurado agora so iniciar
+``` bash
+# Inicializando Docker-Compose/Projeto
+docker-compose up
+```
+
 Após isto abra seu navegador e entre em http://localhost:8000/
 
 ## Tecnologias Utilzadas
