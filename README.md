@@ -9,7 +9,7 @@ Antes de por a mão no codigo foi feito alguns preparativos, como a criação de
 <br/>Trello: https://trello.com/b/jWYjglIp/projeto-estoque
 
 O banco de dados tambem está seguindo um modelo pensado previamente:<br/>
-<img src="assets/Diagrama DB.jpg" alt="Digrama do Banco de Dados" width="600px" length="400px">
+<img src="assets/diagram_db.jpg" alt="Digrama do Banco de Dados" width="600px" length="400px">
 
 ## Como Inicilizar Projeto
 Projeto conta com o Docker que auxilia na parte de execução com o sistema de container, evitando que erros ocorram, pelo simples motivo de estar rodando em outra maquina, com o auxilio do Docker-Compose podemos ter diversos serviços inicializados facilmente, segue abaixo o passo a passo.
