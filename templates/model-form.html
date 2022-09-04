@@ -1,0 +1,14 @@
+{% extends 'model-page.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block main %}
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <h1 class="text-left">{% block title_form %}{% endblock %}</h1>
+        <form method="post"> {% csrf_token %}
+            {{ form|crispy }}
+            <br>
+            {%block button_submit%}{% endblock %}
+        </form>
+    </div>
+{% endblock %}

@@ -1,13 +1,7 @@
-{% extends 'model-page.html' %}
+{% extends 'model-form.html' %}
+{% load crispy_forms_tags %}
+
 {% block title %} Login {% endblock %}
+{% block title_form %} Login {% endblock %}
 
-{% block main %} 
-<form action="" method="post"> {% csrf_token %}
-    {{ form.as_p }} 
-    <p>
-        <input type="submit" value="Login">
-    </p>
-</form>
-
-
-{% endblock %}
+{% block button_submit %} <input type="submit" value="Login" class="btn btn-primary"> {% endblock %}
