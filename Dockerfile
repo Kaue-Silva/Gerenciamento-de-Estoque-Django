@@ -5,6 +5,8 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /code
 
+RUN apk add git gpg gnupg gpg-agent socat
+
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
